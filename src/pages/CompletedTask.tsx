@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 import type { RootState } from '../store';
 import EmptyState from '../components/EmptyState/EmptyState';

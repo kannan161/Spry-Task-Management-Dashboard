@@ -110,6 +110,7 @@ const TaskForm = ({ task, onSubmit, onClose }: Props) => {
             value={dueDate}
             onBlur={() => setSelected(prev => ({ ...prev, dueDate: true }))}
             onChange={e => setDueDate(e.target.value)}
+            min={new Date().toISOString().split('T')[0]}
           />
           {selected.dueDate && errors.dueDate && <p className="error">{errors.dueDate}</p>}
         </div>

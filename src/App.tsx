@@ -1,11 +1,10 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import CompletedTasks from './pages/CompletedTask';
 import AllTasks from './pages/AllTask';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="app-nav">
         <Link to="/" className="nav-brand" aria-label="Go to home page">
           <div className="nav-logo">S</div>
@@ -20,7 +19,7 @@ const App = () => {
         <Route path="/" element={<AllTasks />} />
         <Route path="/completed" element={<CompletedTasks />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
