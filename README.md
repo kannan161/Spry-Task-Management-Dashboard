@@ -2,6 +2,15 @@
 
 A task management app built with React, TypeScript, Vite, Redux Toolkit, and React Router.
 
+## Live Demo
+
+https://kannan161.github.io/Spry-Task-Management-Dashboard/
+
+## Layout
+
+- Responsive page spacing with wider padding on larger screens
+- Fluid container sizing for a more balanced desktop layout
+
 ## Tech Stack
 
 - React 19
@@ -21,5 +30,3 @@ npm run build
 npm run lint
 npm run preview
 ```
-
-
